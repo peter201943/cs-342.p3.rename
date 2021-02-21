@@ -3,7 +3,14 @@
 
 
 
+
+
+
 # [`CS-342` Project 3 Game](https://github.com/peter201943/cs-342.p3.rename) (RENAME)
+
+
+
+
 
 
 
@@ -19,6 +26,21 @@
 
 
 
+
+
+
+
+## Contributing
+- Install [**Unity `2019.4 LTS`**](https://unity.com/releases/2019-lts)
+- Install [**Git**](https://git-scm.com/)
+
+
+
+
+
+
+
+
 ## Repo General
 - Each person gets their own folder
 - No branches
@@ -28,6 +50,9 @@
 - **DO NOT MODIFY SHARED SCENES**
 - **DO NOT MODIFY PERSONAL SCENES**
 - Only modify your own scenes
+
+
+
 
 
 
@@ -56,6 +81,35 @@
 - *FINALIZED* work that is not changed
 
 
+
+
+
+
+
+
+
+## License
+- See each asset's respective `LICENSE` file
+- Any code created for this project is `MIT` licensed
+- Any content created for this project is `CC-0` licensed
+
+
+
+
+
+
+
+
+## Credits
+
+- (TODO)
+
+### [Example](link-to-website)
+- Use-In-Game
+- By [Person](link-to-person)
+- License [Name-of-License](link-to-certificate)
+- Used By `NameOfFunction()`
+- File Name `NameOfFile`
 
 
 
