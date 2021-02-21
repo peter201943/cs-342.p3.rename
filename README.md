@@ -19,7 +19,7 @@
 
 
 
-## Repo
+## Repo General
 - Each person gets their own folder
 - No branches
 - Do not modify files in someone else's folder
@@ -28,6 +28,32 @@
 - **DO NOT MODIFY SHARED SCENES**
 - **DO NOT MODIFY PERSONAL SCENES**
 - Only modify your own scenes
+
+
+
+
+
+## Repo Details
+
+### Categories
+- `Images` Textures, Sprites, Normals
+- `Misc` Anything that does not fit a category
+- `Models` Maya, etc
+- `Scenes` Unity Levels
+- `Scripts` C#
+- `Sounds` Music, Effects
+
+### [Person-2](Assets/RenamePerson2) (FIXME)
+- Work done by Person-2 (FIXME)
+
+### [Person-3](Assets/RenamePerson3) (FIXME)
+- Work done by Person-3 (FIXME)
+
+### [Peter](Assets/Peter)
+- Work done by Peter
+
+### [Shared](Assets/Shared)
+- *FINALIZED* work that is not changed
 
 
 
