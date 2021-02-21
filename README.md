@@ -3,13 +3,13 @@
 
 
 
-# [cs-342.p3.rename](https://github.com/peter201943/cs-342.p3.rename)
+# [`CS-342` Project 3 Game](https://github.com/peter201943/cs-342.p3.rename) (RENAME)
 
 
 
 
 ## About
-- Experimental *Something8 (FIXME) Game for Drexel University
+- Experimental *Something* (FIXME) Game for Drexel University
 - [See the Trailer on YouTube]() (FIXME)
 - Project 3 Team ?, 2021-02-22 to 2021-03-08 (FIXME)
 - [Peter Mangelsdorf](https://github.com/peter201943/)
