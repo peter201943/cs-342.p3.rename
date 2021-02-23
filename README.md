@@ -16,12 +16,12 @@
 
 
 ## About
-- Experimental *Something* (FIXME) Game for Drexel University
+- Experimental *Love* Game for Drexel University
 - [See the Trailer on YouTube]() (FIXME)
-- Project 3 Team ?, 2021-02-22 to 2021-03-08 (FIXME)
+- Project 3 Team 1, 2021-02-22 to 2021-03-08
 - [Peter Mangelsdorf](https://github.com/peter201943/)
-- [Person-2]() (FIXME)
-- [Person-3]() (FIXME)
+- [Austin Abrams]() (FIXME)
+- [Erjun Wang]() (FIXME)
 
 
 
@@ -68,16 +68,16 @@
 - `Scripts` C#
 - `Sounds` Music, Effects
 
-### [Person-2](Assets/RenamePerson2) (FIXME)
-- Work done by Person-2 (FIXME)
+### [Austin](Assets/Austin)
+- Work done by Austin
 
-### [Person-3](Assets/RenamePerson3) (FIXME)
-- Work done by Person-3 (FIXME)
+### [Erjun](Assets/Erjun)
+- Work done by Erjun
 
 ### [Peter](Assets/Peter)
 - Work done by Peter
 
-### [Shared](Assets/Shared)
+### [Final](Assets/Final)
 - *FINALIZED* work that is not changed
 
 
