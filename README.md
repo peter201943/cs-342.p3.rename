@@ -6,7 +6,7 @@
 
 
 
-# [`CS-342` Project 3 Game](https://github.com/peter201943/cs-342.p3.rename) (RENAME)
+# [`CS-342` Project 3: *Stickler for Paperwork*](https://github.com/peter201943/stickler-for-paperwork/)
 
 
 
