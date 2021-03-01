@@ -318,6 +318,9 @@ public class LoveGame : MonoBehaviour
 
         // Reset Trackers
         sessionRunning = true;
+
+        // Start Session
+        session.start = true;
     }
 
 }

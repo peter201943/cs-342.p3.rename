@@ -19,6 +19,8 @@ public class Session : MonoBehaviour
     public float currentTime;
     // Are we done?
     public bool done;
+    // Did we start?
+    public bool start;
 
     /// <summary>
     /// Setup fo simple state management
@@ -27,6 +29,7 @@ public class Session : MonoBehaviour
     {
         // Reset state
         done = false;
+        start = false;
 
         // Ensure each child Answer has a reference to us
         foreach (Transform child in this.transform)
@@ -64,6 +67,11 @@ public class Session : MonoBehaviour
     /// </summary>
     private void Update()
     {
+        if (!start)
+        {
+            return;
+        }
+
         if (currentTime > 0.0f)
         {
             currentTime -= Time.deltaTime;
