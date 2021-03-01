@@ -11,20 +11,32 @@ using UnityEngine;
 /// 
 /// TODO FUTURE
 /// * Add a timer/slider at bottom of screen showing how much time to answer a question remains
+/// * Adjust the max love points to be smaller and smaller over time - also add effects to indicate such!
 /// </summary>
 public class LoveGame : MonoBehaviour
 {
-    [Header("Misc Settings")]
-    // The current order of sessions
-    public List<GameObject> sessionQueue;
-    // All possible sessions
-    public List<GameObject> sessions;
-    // The active dialog session
-    public GameObject currentSession;
+    [Header("The points a player has")]
     // What the player acrrues playing the game
-    public int score;
+    public int lovePointsCurrent;
+    // What value the player starts the game with
+    public int lovePointsStart;
+    // The most points a player can get (part of difficulty?)
+    public int lovePointsMax;
+
+    [Header("Love Points Difficulty")]
+    // Number of points gained on correct answer
+    public int lovePointsGain;
+    // Number of points lost on incorrect answer
+    public int lovePointsLoss;
+    // Number of max points lost per round
+    // TODO FUTURE
+    // public int lovePointsMaxDecrementRound;
+
+    [Header("External References")]
     // Who we update with our score
     public Bar loveBar;
+    // Who we notify of GameOver, etc
+    public GameManager gameManager;
 
     [Header("Question Spawning Difficulty")]
     // The max time a question can take to spawn
@@ -34,13 +46,21 @@ public class LoveGame : MonoBehaviour
     // How quickly questions take less time spawn
     public float questionSpawnDelayDecrementRate;
 
-    [Header("Answer Difficulty")]
+    [Header("Question Timing Difficulty")]
     // The max time a question can be show
     public float answerDelayMax;
     // The min time a question can be shown
     public float answerDelayMin;
     // How quickly questions take less time to be shown
     public float answerDelayDecrementRate;
+
+    [Header("Selection Choosing")]
+    // The current order of sessions
+    public List<GameObject> sessionQueue;
+    // All possible sessions
+    public List<GameObject> sessions;
+    // The active dialog session
+    public GameObject currentSession;
 
     /// <summary>
     /// Setup the Love Minigame
@@ -55,8 +75,26 @@ public class LoveGame : MonoBehaviour
 
         // Pick our first Session
         // TODO
+
+        // Reset the Score
+        lovePointsCurrent = lovePointsStart;
     }
 
+    /// <summary>
+    /// Player answers a question correctly
+    /// </summary>
+    public void Correct()
+    {
+        // TODO
+    }
+
+    /// <summary>
+    /// Player answers a question incorrectly
+    /// </summary>
+    public void InCorrect()
+    {
+        // TODO
+    }
 
 
 }
