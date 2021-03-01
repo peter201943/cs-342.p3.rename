@@ -55,8 +55,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575225095521770947, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -8.0999365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575225095521770947, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.08000183
+      value: -1.0499649
       objectReference: {fileID: 0}
     - target: {fileID: 1665995875584805702, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
@@ -208,10 +213,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1988527338418509985, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2215313364419530494, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3951361791120549692, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6353625339367474337, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
@@ -236,11 +251,21 @@ PrefabInstance:
     - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
       propertyPath: m_Value
-      value: 0.578
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
       propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
+      propertyPath: m_WholeNumbers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

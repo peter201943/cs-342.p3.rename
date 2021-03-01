@@ -475,8 +475,8 @@ MonoBehaviour:
   - {fileID: 2405266310447727697, guid: 8dbfc85f4bcaaf341bad61791f4181d1, type: 3}
   Money: {fileID: 7271911731875290367}
   spawnRate: 2
-  Xmin: -17
-  Xmax: 3
+  Xmin: -12
+  Xmax: -2
   Y: 6
   MaxType: 2
   MaxSpawnTimes: 50
