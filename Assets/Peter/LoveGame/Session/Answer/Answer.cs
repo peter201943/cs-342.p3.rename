@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Answer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // who we notify on mouse click
+    public Session session;
+
+
 }

@@ -27,6 +27,19 @@ public class Session : MonoBehaviour
     {
         // Reset state
         done = false;
+
+        // Ensure each child Answer has a reference to us
+        foreach (Transform child in this.transform)
+        {
+            try
+            {
+                Answer nextAnswer = child.gameObject.GetComponent<Answer>();
+                nextAnswer.session = this;
+            }
+            catch
+            {
+            }
+        }
     }
 
     /// <summary>
