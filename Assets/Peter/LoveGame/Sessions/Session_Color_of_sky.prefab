@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 4286797702232637426, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: No
+      value: Red
       objectReference: {fileID: 0}
     - target: {fileID: 4286797702232637426, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -110,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 4520719518051207418, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: No
+      value: Blue
       objectReference: {fileID: 0}
     - target: {fileID: 6064021860624462896, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -130,12 +130,12 @@ PrefabInstance:
     - target: {fileID: 8164908184948495761, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 753
+      value: 731
       objectReference: {fileID: 0}
     - target: {fileID: 8164908184948495761, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -346
+      value: -302
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28374c6fc80379e4ca8e8dfa65b32f43, type: 3}
@@ -159,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_Text
-      value: Do you love me?
+      value: What color is the sky?
       objectReference: {fileID: 0}
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 8073428758473651978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_Name
-      value: Session_Do_you_love_me
+      value: Session_Color_of_sky
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90b1d8bec8db55d42bd6156f517e2664, type: 3}
@@ -349,7 +349,7 @@ PrefabInstance:
     - target: {fileID: 4286797702232637426, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: Yes
+      value: Blue
       objectReference: {fileID: 0}
     - target: {fileID: 4286797702232637426, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -389,7 +389,7 @@ PrefabInstance:
     - target: {fileID: 4520719518051207418, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: Yes
+      value: Red
       objectReference: {fileID: 0}
     - target: {fileID: 6064021860624462896, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -409,12 +409,12 @@ PrefabInstance:
     - target: {fileID: 8164908184948495761, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 368
+      value: 299
       objectReference: {fileID: 0}
     - target: {fileID: 8164908184948495761, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -346
+      value: -292
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28374c6fc80379e4ca8e8dfa65b32f43, type: 3}
