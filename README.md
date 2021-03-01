@@ -41,24 +41,6 @@
 
 
 
-## Repo General
-- Each person gets their own folder
-- No branches
-- Do not modify files in someone else's folder
-- If you want something that someone else is working on, make a copy of it and put it in your own folder
-- Each scene has a prefab that someone contributes and is updated automatically when they make changes
-- Do *not* touch someone else's prefabs if they are working on them
-- **DO NOT MODIFY SOMEONE ELSE'S SCENES**
-- Only modify your **own** scenes
-
-
-
-
-
-
-
-
-
 ## License
 - See each asset's respective `LICENSE` file
 - Any code created for this project is `MIT` licensed
@@ -73,14 +55,12 @@
 
 ## Credits
 
-- (TODO)
-
-### [Example](link-to-website)
-- Use-In-Game
-- By [Person](link-to-person)
-- License [Name-of-License](link-to-certificate)
-- Used By `NameOfFunction()`
-- File Name `NameOfFile`
+> ### [Example](link-to-website)
+> - Use-In-Game
+> - By [Person](link-to-person)
+> - License [Name-of-License](link-to-certificate)
+> - Used By `NameOfFunction()`
+> - File Name `NameOfFile`
 
 
 
