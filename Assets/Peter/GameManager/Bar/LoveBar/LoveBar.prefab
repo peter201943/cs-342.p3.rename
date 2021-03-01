@@ -251,6 +251,16 @@ PrefabInstance:
     - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
       propertyPath: m_Value
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
+      propertyPath: m_WholeNumbers
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

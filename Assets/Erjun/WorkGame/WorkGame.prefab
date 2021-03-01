@@ -83,7 +83,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7271911731601646649
 RectTransform:
   m_ObjectHideFlags: 0
@@ -480,7 +480,7 @@ MonoBehaviour:
   Y: 6
   MaxType: 2
   MaxSpawnTimes: 50
-  MoneyAmount: 100
+  MoneyAmount: 1
   StartSpawnTime: 1
 --- !u!1 &7271911732317203408
 GameObject:
@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: {fileID: 7271911731875290367}
-  MoneyReduceAmount: 100
+  MoneyReduceAmount: 1
   SP: {fileID: 0}
 --- !u!1 &7271911732634085595
 GameObject:
@@ -573,7 +573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7271911732634085599
 RectTransform:
   m_ObjectHideFlags: 0
