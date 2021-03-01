@@ -77,6 +77,9 @@ public class LoveGame : MonoBehaviour
     public bool sessionSpawnDelayDifficultyDone;
     // We are done finding new difficulties for messages
     public bool sessionAnswerDelayDifficultyDone;
+    // The actual spawn delay, RENAME
+    public float _sessionSpawnDelayCurrent;
+
 
     /// <summary>
     /// Setup the Love Minigame
@@ -91,9 +94,6 @@ public class LoveGame : MonoBehaviour
         stopped = false;
         sessionSpawnDelayDifficultyDone = false;
         sessionAnswerDelayDifficultyDone = false;
-
-        // Load queue for first time
-        SessionUpdate();
 
         // Pick our first Session
         SpawnSession();
@@ -121,7 +121,14 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     public void Correct()
     {
+        // Play any side effects
+        // TODO FUTURE
+
+        // Update the Score
         UpdateScore(lovePointsGain);
+
+        // Reset Session
+        // TODO
     }
 
     /// <summary>
@@ -129,7 +136,14 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     public void InCorrect()
     {
+        // Play any side effects
+        // TODO FUTURE
+
+        // Update the Score
         UpdateScore(lovePointsLoss);
+
+        // Reset Session
+        // TODO
     }
 
 
@@ -184,20 +198,14 @@ public class LoveGame : MonoBehaviour
     }
 
     /// <summary>
-    /// TODO Add Details
+    /// Each frame, run logic for sessions
     /// </summary>
     private void SessionUpdate()
     {
         // When a session is over, start timer for next one
         // TODO
 
-        // when session and timer over, check if session queue has any sessions and get the next one
-        // TODO
-
-        // if session queue empty, remake it and pick next session
-        // TODO
-
-        // tell session to start with our time values
+        // when session and timer over, spawn new session
         // TODO
     }
 
@@ -254,6 +262,12 @@ public class LoveGame : MonoBehaviour
     {
         // Delete the Current Session
         Destroy(currentSession);
+
+        // Check if queue empty and refill it if it is
+        if (sessionQueue.Count <= 0)
+        {
+            NewQueue();
+        }
 
         // Pick Next Session and Instantiate it
         currentSession = Instantiate(
