@@ -19,11 +19,11 @@ public class BottomLine : MonoBehaviour
         if(collision.gameObject.tag == "Right")
         {
             Money.value = Money.value - MoneyReduceAmount;
-        }
+        }/*
         if (collision.gameObject.tag == "Wrong")
         {
             Money.value = Money.value + MoneyReduceAmount;
-        }
+        }*/
         Destroy(collision.gameObject);
     }
 
