@@ -181,12 +181,16 @@ public class LoveGame : MonoBehaviour
     private void SessionUpdate()
     {
         // When a session is over, start timer for next one
+        // TODO
 
         // when session and timer over, check if session queue has any sessions and get the next one
+        // TODO
 
         // if session queue empty, remake it and pick next session
+        // TODO
 
         // tell session to start with our time values
+        // TODO
     }
 
     /// <summary>
@@ -195,8 +199,10 @@ public class LoveGame : MonoBehaviour
     private void DifficultyUpdate()
     {
         // Spawn Difficulty
+        // TODO
 
         // Message Difficulty
+        // TODO
     }
 
     /// <summary>
@@ -207,13 +213,15 @@ public class LoveGame : MonoBehaviour
         // Delete the Current Session
         Destroy(currentSession);
 
-        // Pick Next Session
+        // Pick Next Session and Instantiate it
         currentSession = Instantiate(
             sessionQueue.Dequeue(),
             sessionSpawnLocation.position,
             Quaternion.identity);
-
-        // Spawn it
+        Session session = currentSession.GetComponent<Session>();
+        
+        // Configure the Session
+        // TODO
     }
 
 }
