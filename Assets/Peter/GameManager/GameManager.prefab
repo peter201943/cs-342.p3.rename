@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minuteHand: {fileID: 0}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 294459881666632442}
   currentTime: 0
   startTime: 0
 --- !u!1 &4333744376879603907
@@ -667,7 +667,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 294459881666632442}
     - target: {fileID: 7121627092080344940, guid: 96c3a720a991aae42b0baf27ddf6e907,
         type: 3}
       propertyPath: m_Name
@@ -692,7 +692,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 294459881666632442}
     - target: {fileID: 2618184184860937309, guid: 9e12f3e44ddc73247b85fe5a3c20800b,
         type: 3}
       propertyPath: m_AnchorMax.x
