@@ -325,22 +325,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lovePointsCurrent: 0
-  lovePointsStart: 0
-  lovePointsMax: 0
-  lovePointsGain: 0
-  lovePointsLoss: 0
+  lovePointsStart: 5
+  lovePointsMax: 10
+  lovePointsGain: 1
+  lovePointsLoss: 1
   loveBar: {fileID: 0}
   gameManager: {fileID: 0}
-  sessionSpawnLocation: {fileID: 6727718504972030669}
-  sessionSpawnDelayMax: 0
-  sessionSpawnDelayMin: 0
-  sessionSpawnDelayDecrementRate: 0
-  sessionAnswerDelayMax: 0
-  sessionAnswerMin: 0
-  sessionAnswerDecrementRate: 0
+  sessionSpawnLocation: {fileID: 1840115252862487729}
+  sessionSpawnDelayNext: 0
+  sessionSpawnDelayMax: 3
+  sessionSpawnDelayMin: 0.2
+  sessionSpawnDelayDecrementRate: 0.4
+  sessionAnswerDelayNext: 0
+  sessionAnswerDelayMax: 5
+  sessionAnswerDelayMin: 0.5
+  sessionAnswerDelayDecrementRate: 0.6
   sessions: []
   currentSession: {fileID: 0}
   stopped: 0
+  sessionSpawnDelayDifficultyDone: 0
+  sessionAnswerDelayDifficultyDone: 0
+  sessionSpawnDelayCurrent: 0
+  sessionRunning: 0
 --- !u!1 &8321707132291212013
 GameObject:
   m_ObjectHideFlags: 0
