@@ -13,8 +13,8 @@ public class Session : MonoBehaviour
     // Who we notify
     public LoveGame loveGame;
     // all of the answers
-    // Which answers are ok
-    public List<Answer> goodAnswers;
+    // Which answers are ok NOTICE MUST BE CONFIGURED
+    public List<GameObject> goodAnswers;
     // Time remaining to answer the question
     public float currentTime;
     // Are we done?
@@ -76,7 +76,7 @@ public class Session : MonoBehaviour
     public void Answer(GameObject sender)
     {
         // Check if it is a correct answer
-        foreach (Answer goodAnswer in goodAnswers)
+        foreach (GameObject goodAnswer in goodAnswers)
         {
             if (sender == goodAnswer)
             {
