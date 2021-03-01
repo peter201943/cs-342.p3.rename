@@ -58,13 +58,17 @@ public class LoveGame : MonoBehaviour
     // All possible sessions, NOT MUTATED
     public List<GameObject> sessions;
     // The current order of sessions, MUTATED, DO NOT MODIFY
-    public List<GameObject> sessionQueue;
+    public Queue<GameObject> sessionQueue;
     // The active dialog session
     public GameObject currentSession;
 
     [Header("Misc Debug")]
     // Whether the player has lost the game
     public bool stopped;
+    // Randomization
+    // TODO FUTURE
+    // public int random = 5;
+    // public int maxRandom = 12;
 
     /// <summary>
     /// Setup the Love Minigame
@@ -72,10 +76,10 @@ public class LoveGame : MonoBehaviour
     void Start()
     {
         // Setup the Sessions Queue
-        // TODO
+        NewQueue();
 
         // Pick our first Session
-        // TODO
+        currentSession = sessionQueue.Dequeue();
 
         // Reset the Score
         lovePointsCurrent = lovePointsStart;
@@ -89,7 +93,15 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     private void NewQueue()
     {
-
+        // Clear Current Queue
+        sessionQueue.Clear();
+        // Shuffle the List
+        // TODO
+        // Add all of the items of the list
+        foreach (GameObject nextSession in sessions)
+        {
+            sessionQueue.Enqueue(nextSession);
+        }
     }
 
     /// <summary>
@@ -147,5 +159,37 @@ public class LoveGame : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Session Spawning, etc
+    /// </summary>
+    private void Update()
+    {
+        // Update Session Logic
+        SessionUpdate();
+
+        // Update Difficulty Logic
+        DifficultyUpdate();
+    }
+
+    /// <summary>
+    /// TODO Add Details
+    /// </summary>
+    private void SessionUpdate()
+    {
+        // When a session is over, start timer for next one
+
+        // when session and timer over, check if session queue has any sessions and get the next one
+
+        // if session queue empty, remake it and pick next session
+
+        // tell session to start with our time values
+    }
+
+    private void DifficultyUpdate()
+    {
+        // Spawn Difficulty
+
+        // Message Difficulty
+    }
 
 }
