@@ -276,6 +276,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Session_Planet
       objectReference: {fileID: 0}
+    - target: {fileID: 8073428758473651979, guid: 90b1d8bec8db55d42bd6156f517e2664,
+        type: 3}
+      propertyPath: goodAnswers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073428758473651979, guid: 90b1d8bec8db55d42bd6156f517e2664,
+        type: 3}
+      propertyPath: goodAnswers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6943453090657302201}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90b1d8bec8db55d42bd6156f517e2664, type: 3}
 --- !u!4 &1550418170331009088 stripped
@@ -349,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 1442574227194525279, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Name
-      value: AnswerYes
+      value: AnswerEarth
       objectReference: {fileID: 0}
     - target: {fileID: 4286797702232637426, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -423,3 +433,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28374c6fc80379e4ca8e8dfa65b32f43, type: 3}
+--- !u!1 &6943453090657302201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1442574227194525279, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
+    type: 3}
+  m_PrefabInstance: {fileID: 8383754521887064294}
+  m_PrefabAsset: {fileID: 0}
