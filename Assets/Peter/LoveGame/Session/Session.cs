@@ -38,6 +38,8 @@ public class Session : MonoBehaviour
             }
             catch
             {
+                // TEMP DEBUG
+                Debug.Log("Could not add " + child);
             }
         }
     }
@@ -47,10 +49,14 @@ public class Session : MonoBehaviour
     /// </summary>
     private void TimeOut()
     {
-        loveGame.InCorrect();
-        // TODO FUTURE
+        // TEMP DEBUG
+        Debug.Log("TIMEOUT");
+
         // Any side effects for being slow
-        return;
+        // TODO FUTURE
+
+        // Notify Owner
+        loveGame.InCorrect();
     }
 
     /// <summary>
@@ -80,15 +86,29 @@ public class Session : MonoBehaviour
         {
             if (sender == goodAnswer)
             {
-                loveGame.Correct();
-                // TODO FUTURE
+                // TEMP DEBUG
+                Debug.Log("GOOD ANSWER");
+
                 // Any Side Effects for being correct
+                // TODO FUTURE
+
+                // Notify owner
+                loveGame.Correct();
+
+                // EARLY Cleanup
                 return;
             }
         }
-        loveGame.InCorrect();
-        // TODO FUTURE
+        // TEMP DEBUG
+        Debug.Log("BAD ANSWER");
+
         // Any side effects for being wrong
+        // TODO FUTURE
+
+        // Notify owner
+        loveGame.InCorrect();
+
+        // Cleanup
         return;
     }
 }
