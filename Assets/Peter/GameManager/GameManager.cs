@@ -68,7 +68,13 @@ public class GameManager : MonoBehaviour
             roundOverBool = true;
 
             // Show the RoundOver action
-            roundOver.SetActive(true);
+            try
+            {
+                roundOver.SetActive(true);
+            }
+            catch
+            {
+            }
         }
     }
 
