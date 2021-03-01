@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BottomLine : MonoBehaviour
 {
-    public Text Money;
+    public Slider Money;
     public int MoneyReduceAmount;
     public SpawnPaper SP;
 
@@ -18,13 +18,11 @@ public class BottomLine : MonoBehaviour
     {
         if(collision.gameObject.tag == "Right")
         {
-            int x;
-            x = int.Parse(Money.text) - MoneyReduceAmount;
-
-            Money.text = x.ToString();
-
-            // DEBUG Show current score
-            // Debug.Log(x);
+            Money.value = Money.value - MoneyReduceAmount;
+        }
+        if (collision.gameObject.tag == "Wrong")
+        {
+            Money.value = Money.value + MoneyReduceAmount;
         }
         Destroy(collision.gameObject);
     }

@@ -7,7 +7,7 @@ public class PaperHover : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Pattern;
-    public Text Money;
+    public Slider Money;
     public int MoneyAmount;
     void Start()
     {
@@ -30,19 +30,13 @@ public class PaperHover : MonoBehaviour
     {
         if(this.gameObject.tag == "Right")
         {
-            int x;
-            x = int.Parse(Money.text) + MoneyAmount;
-
-            Money.text = x.ToString();
+            Money.value = Money.value + MoneyAmount;
             Destroy(this.gameObject);
         }
 
         if(this.gameObject.tag == "Wrong")
         {
-            int x;
-            x = int.Parse(Money.text) - MoneyAmount;
-
-            Money.text = x.ToString();
+            Money.value = Money.value - MoneyAmount;
             Destroy(this.gameObject);
         }
     }

@@ -251,7 +251,12 @@ PrefabInstance:
     - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
@@ -261,7 +266,7 @@ PrefabInstance:
     - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}
       propertyPath: m_WholeNumbers
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8665052257375173745, guid: 6d5ee15ad75b19d408a706e9a988ab54,
         type: 3}

@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pattern: {fileID: 2405266310219343995}
   Money: {fileID: 0}
-  MoneyAmount: 100
+  MoneyAmount: 1
 --- !u!1 &2405266310587280512
 GameObject:
   m_ObjectHideFlags: 0

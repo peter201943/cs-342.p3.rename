@@ -8,7 +8,7 @@ public class SpawnPaper: MonoBehaviour
     public GameObject[] Paper;
    // public float YLocation;
     private Vector2 spawnLocation;
-    public Text Money;
+    public Slider Money;
     public float spawnRate = 2.0f;
     private float nextSpawn = 0.0f;
     public float Xmin, Xmax, Y;
