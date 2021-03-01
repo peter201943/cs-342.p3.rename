@@ -24,9 +24,9 @@ public class LoveGame : MonoBehaviour
     public int lovePointsMax;
 
     [Header("Love Points Difficulty")]
-    // Number of points gained on correct answer
+    // Number of points gained on correct answer, MUST BE POSITIVE
     public int lovePointsGain;
-    // Number of points lost on incorrect answer
+    // Number of points lost on incorrect answer, MUST BE NEGATIVE
     public int lovePointsLoss;
     // Number of max points lost per round
     // TODO FUTURE
@@ -62,6 +62,10 @@ public class LoveGame : MonoBehaviour
     // The active dialog session
     public GameObject currentSession;
 
+    [Header("Misc Debug")]
+    // Whether the player has lost the game
+    public bool stopped;
+
     /// <summary>
     /// Setup the Love Minigame
     /// </summary>
@@ -75,6 +79,8 @@ public class LoveGame : MonoBehaviour
 
         // Reset the Score
         lovePointsCurrent = lovePointsStart;
+        UpdateScore(0);
+        stopped = false;
     }
 
     /// <summary>
@@ -91,7 +97,7 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     public void Correct()
     {
-        // TODO
+        UpdateScore(lovePointsGain);
     }
 
     /// <summary>
@@ -99,7 +105,46 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     public void InCorrect()
     {
-        // TODO
+        UpdateScore(lovePointsLoss);
+    }
+
+
+    /// <summary>
+    /// Does all manner of
+    /// * side-effects
+    /// * notifications
+    /// * computations
+    /// All part of a nice, simple interface though
+    /// </summary>
+    /// <param name="change">The amount we change the score by</param>
+    private void UpdateScore(int change)
+    {
+        // Update Internal Value
+        lovePointsCurrent += change;
+
+        // Update UI
+        loveBar.UpdateScore(lovePointsCurrent);
+
+        // Check for Loss
+        if (change < 0)
+        {
+            // Trigger any Side Effects
+            // TODO
+        }
+
+        // Check for Gain
+        if (change > 0)
+        {
+            // Trigger any Side Effects
+            // TODO
+        }
+
+        // Check for GameOver
+        if (lovePointsCurrent <= 0 && !stopped)
+        {
+            gameManager.OnGameOver();
+            stopped = true;
+        }
     }
 
 
