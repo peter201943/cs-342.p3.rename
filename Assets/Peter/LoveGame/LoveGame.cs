@@ -100,11 +100,10 @@ public class LoveGame : MonoBehaviour
         // Fill the Queue for the first time
         foreach (GameObject nextSession in sessions)
         {
+            // TEMP DEBUG
+            Debug.Log("nextSession: " + nextSession);
             sessionQueue.Enqueue(nextSession);
         }
-
-        // DEBUG I AM GOING CRAZY
-        Debug.Log(sessionQueue);
 
         // Pick our first Session
         SpawnSession();
