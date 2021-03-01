@@ -97,6 +97,9 @@ public class LoveGame : MonoBehaviour
         sessionSpawnDelayDifficultyDone = false;
         sessionAnswerDelayDifficultyDone = false;
 
+        // Setup Queue for first time
+        sessionQueue = new Queue<GameObject>();
+
         // Fill the Queue for the first time
         foreach (GameObject nextSession in sessions)
         {
