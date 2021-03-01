@@ -97,6 +97,15 @@ public class LoveGame : MonoBehaviour
         sessionSpawnDelayDifficultyDone = false;
         sessionAnswerDelayDifficultyDone = false;
 
+        // Fill the Queue for the first time
+        foreach (GameObject nextSession in sessions)
+        {
+            sessionQueue.Enqueue(nextSession);
+        }
+
+        // DEBUG I AM GOING CRAZY
+        Debug.Log(sessionQueue);
+
         // Pick our first Session
         SpawnSession();
     }
