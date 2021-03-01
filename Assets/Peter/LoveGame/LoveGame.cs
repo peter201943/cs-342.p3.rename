@@ -218,6 +218,8 @@ public class LoveGame : MonoBehaviour
             sessionQueue.Dequeue(),
             sessionSpawnLocation.position,
             Quaternion.identity);
+
+        // Get reference to session
         Session session = currentSession.GetComponent<Session>();
         
         // Configure the Session
