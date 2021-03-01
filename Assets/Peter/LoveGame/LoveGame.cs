@@ -43,8 +43,8 @@ public class LoveGame : MonoBehaviour
     public Transform sessionSpawnLocation;
 
     [Header("Question Spawning Difficulty")]
-    // The current time a question can take to spawn
-    public float sessionSpawnDelayCurrent;
+    // The next time a question can take to spawn
+    public float sessionSpawnDelayNext;
     // The max time a question can take to spawn
     public float sessionSpawnDelayMax;
     // The min time a question can take to spawn
@@ -53,8 +53,8 @@ public class LoveGame : MonoBehaviour
     public float sessionSpawnDelayDecrementRate;
 
     [Header("Session Timing Difficulty")]
-    // The current time a question can be shown, DO NOT MODIFY
-    public float sessionAnswerDelayCurrent;
+    // The next time a question can be shown, DO NOT MODIFY
+    public float sessionAnswerDelayNext;
     // The max time a question can be shown
     public float sessionAnswerDelayMax;
     // The min time a question can be shown
@@ -77,8 +77,10 @@ public class LoveGame : MonoBehaviour
     public bool sessionSpawnDelayDifficultyDone;
     // We are done finding new difficulties for messages
     public bool sessionAnswerDelayDifficultyDone;
-    // The actual spawn delay, RENAME
-    public float _sessionSpawnDelayCurrent;
+    // The current spawn delay
+    public float sessionSpawnDelayCurrent;
+    // Whether we already have a session in play
+    public bool sessionRunning;
 
 
     /// <summary>
@@ -128,7 +130,7 @@ public class LoveGame : MonoBehaviour
         UpdateScore(lovePointsGain);
 
         // Reset Session
-        // TODO
+        sessionRunning = false;
     }
 
     /// <summary>
@@ -143,7 +145,7 @@ public class LoveGame : MonoBehaviour
         UpdateScore(lovePointsLoss);
 
         // Reset Session
-        // TODO
+        sessionRunning = false;
     }
 
 
@@ -202,11 +204,22 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     private void SessionUpdate()
     {
-        // When a session is over, start timer for next one
-        // TODO
+        // When a session is over
+        if ( !sessionRunning )
+        {
+            // Decrement Timer
+            sessionSpawnDelayCurrent -= Time.deltaTime;
+        }
 
-        // when session and timer over, spawn new session
-        // TODO
+        // when enough time has elapsed
+        if ( sessionSpawnDelayCurrent <= 0.0f )
+        {
+            // Reset Timer
+            sessionSpawnDelayCurrent = sessionSpawnDelayNext;
+
+            // Make New Session
+            SpawnSession();
+        }
     }
 
     /// <summary>
@@ -218,18 +231,18 @@ public class LoveGame : MonoBehaviour
         if (!sessionSpawnDelayDifficultyDone)
         {
             // Find new time
-            float nextTime = sessionSpawnDelayCurrent - sessionSpawnDelayDecrementRate * Time.deltaTime;
+            float nextTime = sessionSpawnDelayNext - sessionSpawnDelayDecrementRate * Time.deltaTime;
 
             // See if it is at our minimum
             if (nextTime > sessionSpawnDelayMin)
             {
-                sessionSpawnDelayCurrent = nextTime;
+                sessionSpawnDelayNext = nextTime;
             }
 
             // stop if it is
             if (nextTime <= sessionSpawnDelayMin)
             {
-                sessionSpawnDelayCurrent = sessionSpawnDelayMin;
+                sessionSpawnDelayNext = sessionSpawnDelayMin;
                 sessionSpawnDelayDifficultyDone = true;
             }
         }
@@ -238,18 +251,18 @@ public class LoveGame : MonoBehaviour
         if (!sessionAnswerDelayDifficultyDone)
         {
             // Find new time
-            float nextTime = sessionAnswerDelayCurrent - sessionAnswerDelayDecrementRate * Time.deltaTime;
+            float nextTime = sessionAnswerDelayNext - sessionAnswerDelayDecrementRate * Time.deltaTime;
 
             // See if it is at our minimum
             if (nextTime > sessionAnswerDelayMax)
             {
-                sessionSpawnDelayCurrent = nextTime;
+                sessionAnswerDelayNext = nextTime;
             }
 
             // stop if it is
             if (nextTime <= sessionAnswerDelayMin)
             {
-                sessionAnswerDelayCurrent = sessionAnswerDelayMin;
+                sessionAnswerDelayNext = sessionAnswerDelayMin;
                 sessionAnswerDelayDifficultyDone = true;
             }
         }
@@ -283,7 +296,10 @@ public class LoveGame : MonoBehaviour
 
         // Configure the Session
         session.loveGame = this;
-        session.currentTime = sessionAnswerDelayCurrent;
+        session.currentTime = sessionAnswerDelayNext;
+
+        // Reset Trackers
+        sessionRunning = true;
     }
 
 }
