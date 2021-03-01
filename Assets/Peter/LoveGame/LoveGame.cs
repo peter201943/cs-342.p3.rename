@@ -40,25 +40,25 @@ public class LoveGame : MonoBehaviour
 
     [Header("Question Spawning Difficulty")]
     // The max time a question can take to spawn
-    public float questionSpawnDelayMax;
+    public float sessionSpawnDelayMax;
     // The min time a question can take to spawn
-    public float questionSpawnDelayMin;
+    public float sessionSpawnDelayMin;
     // How quickly questions take less time spawn
-    public float questionSpawnDelayDecrementRate;
+    public float sessionSpawnDelayDecrementRate;
 
-    [Header("Question Timing Difficulty")]
+    [Header("Session Timing Difficulty")]
     // The max time a question can be show
-    public float answerDelayMax;
+    public float sessionAnswerDelayMax;
     // The min time a question can be shown
-    public float answerDelayMin;
+    public float sessionAnswerMin;
     // How quickly questions take less time to be shown
-    public float answerDelayDecrementRate;
+    public float sessionAnswerDecrementRate;
 
     [Header("Selection Choosing")]
-    // The current order of sessions
-    public List<GameObject> sessionQueue;
-    // All possible sessions
+    // All possible sessions, NOT MUTATED
     public List<GameObject> sessions;
+    // The current order of sessions, MUTATED, DO NOT MODIFY
+    public List<GameObject> sessionQueue;
     // The active dialog session
     public GameObject currentSession;
 
@@ -67,9 +67,6 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     void Start()
     {
-        // Gather any child Sessions and list them
-        // TODO
-
         // Setup the Sessions Queue
         // TODO
 
@@ -78,6 +75,15 @@ public class LoveGame : MonoBehaviour
 
         // Reset the Score
         lovePointsCurrent = lovePointsStart;
+    }
+
+    /// <summary>
+    /// Creates a new queue of sessions from the current set
+    /// Orders them randomly
+    /// </summary>
+    private void NewQueue()
+    {
+
     }
 
     /// <summary>
