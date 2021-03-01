@@ -23,7 +23,9 @@ public class PaperHover : MonoBehaviour
     private void OnMouseEnter()
     {
         Pattern.SetActive(true);
-        Debug.Log("Ha");
+        
+        // TEMP DEBUG
+        // Debug.Log("Ha");
     }
   
     public void SendMoney()
