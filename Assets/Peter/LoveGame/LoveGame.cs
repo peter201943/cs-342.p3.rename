@@ -23,6 +23,15 @@ public class LoveGame : MonoBehaviour
     // The most points a player can get (part of difficulty?)
     public int lovePointsMax;
 
+    [Header("Love Points Difficulty")]
+    // Number of points gained on correct answer
+    public int lovePointsGain;
+    // Number of points lost on incorrect answer
+    public int lovePointsLoss;
+    // Number of max points lost per round
+    // TODO FUTURE
+    // public int lovePointsMaxDecrementRound;
+
     [Header("External References")]
     // Who we update with our score
     public Bar loveBar;
@@ -37,7 +46,7 @@ public class LoveGame : MonoBehaviour
     // How quickly questions take less time spawn
     public float questionSpawnDelayDecrementRate;
 
-    [Header("Answer Difficulty")]
+    [Header("Question Timing Difficulty")]
     // The max time a question can be show
     public float answerDelayMax;
     // The min time a question can be shown
