@@ -58,9 +58,9 @@ public class LoveGame : MonoBehaviour
     // The max time a question can be shown
     public float sessionAnswerDelayMax;
     // The min time a question can be shown
-    public float sessionAnswerMin;
+    public float sessionAnswerDelayMin;
     // How quickly questions take less time to be shown
-    public float sessionAnswerDecrementRate;
+    public float sessionAnswerDelayDecrementRate;
 
     [Header("Selection Choosing")]
     // All possible sessions, NOT MUTATED
@@ -73,26 +73,30 @@ public class LoveGame : MonoBehaviour
     [Header("Misc Debug")]
     // Whether the player has lost the game
     public bool stopped;
-    // Randomization
-    // TODO FUTURE
-    // public int random = 5;
-    // public int maxRandom = 12;
+    // We are done finding new difficulties for spawn
+    public bool sessionSpawnDelayDifficultyDone;
+    // We are done finding new difficulties for messages
+    public bool sessionAnswerDelayDifficultyDone;
 
     /// <summary>
     /// Setup the Love Minigame
     /// </summary>
     void Start()
     {
-        // Setup the Sessions Queue
-        NewQueue();
-
-        // Pick our first Session
-        SpawnSession();
-
         // Reset the Score
         lovePointsCurrent = lovePointsStart;
         UpdateScore(0);
+
+        // Reset State
         stopped = false;
+        sessionSpawnDelayDifficultyDone = false;
+        sessionAnswerDelayDifficultyDone = false;
+
+        // Load queue for first time
+        SessionUpdate();
+
+        // Pick our first Session
+        SpawnSession();
     }
 
     /// <summary>
@@ -149,14 +153,14 @@ public class LoveGame : MonoBehaviour
         if (change < 0)
         {
             // Trigger any Side Effects
-            // TODO
+            // TODO FUTURE
         }
 
         // Check for Gain
         if (change > 0)
         {
             // Trigger any Side Effects
-            // TODO
+            // TODO FUTURE
         }
 
         // Check for GameOver
@@ -202,11 +206,45 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     private void DifficultyUpdate()
     {
-        // Spawn Difficulty
-        // TODO
+        // Spawn Difficulty increases over time
+        if (!sessionSpawnDelayDifficultyDone)
+        {
+            // Find new time
+            float nextTime = sessionSpawnDelayCurrent - sessionSpawnDelayDecrementRate * Time.deltaTime;
 
-        // Message Difficulty
-        // TODO
+            // See if it is at our minimum
+            if (nextTime > sessionSpawnDelayMin)
+            {
+                sessionSpawnDelayCurrent = nextTime;
+            }
+
+            // stop if it is
+            if (nextTime <= sessionSpawnDelayMin)
+            {
+                sessionSpawnDelayCurrent = sessionSpawnDelayMin;
+                sessionSpawnDelayDifficultyDone = true;
+            }
+        }
+
+        // Message difficulty increases over time
+        if (!sessionAnswerDelayDifficultyDone)
+        {
+            // Find new time
+            float nextTime = sessionAnswerDelayCurrent - sessionAnswerDelayDecrementRate * Time.deltaTime;
+
+            // See if it is at our minimum
+            if (nextTime > sessionAnswerDelayMax)
+            {
+                sessionSpawnDelayCurrent = nextTime;
+            }
+
+            // stop if it is
+            if (nextTime <= sessionAnswerDelayMin)
+            {
+                sessionAnswerDelayCurrent = sessionAnswerDelayMin;
+                sessionAnswerDelayDifficultyDone = true;
+            }
+        }
     }
 
     /// <summary>
@@ -222,6 +260,9 @@ public class LoveGame : MonoBehaviour
             sessionQueue.Dequeue(),
             sessionSpawnLocation.position,
             Quaternion.identity);
+
+        // Make it our child (keep scene tree clean)
+        currentSession.transform.parent = this.gameObject.transform;
 
         // Get reference to session
         Session session = currentSession.GetComponent<Session>();
