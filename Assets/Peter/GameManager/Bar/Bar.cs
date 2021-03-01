@@ -20,6 +20,9 @@ public class Bar : MonoBehaviour
     // The minimum value we can reach
     public int minValue;
 
+    // The Slider used to show our values
+    public Slider slider;
+
     // Text/Effect/Image/Sound we enable when we lose points
     // TODO FUTURE
     // public GameObject loseValue;
@@ -28,12 +31,27 @@ public class Bar : MonoBehaviour
     // TODO FUTURE
     // public GameObject addValue;
 
+    /// <summary>
+    /// Configures the slider at startup
+    /// </summary>
+    void Start()
+    {
+        slider.maxValue = maxValue;
+        slider.minValue = minValue;
+        slider.value = currentValue;
+    }
+
     void UpdateScore(int amount)
     {
         // Positive Values
         if (amount > 0)
         {
+            // Update internal value
             currentValue = currentValue + amount;
+
+            // Update displayed value
+            slider.value = currentValue;
+
             // TODO FUTURE
             // Trigger any gain related effects
         }
@@ -41,7 +59,12 @@ public class Bar : MonoBehaviour
         // Negative Values
         if (amount < 0)
         {
+            // Update internal value
             currentValue = currentValue - amount;
+
+            // Update displayed value
+            slider.value = currentValue;
+
             // TODO FUTURE
             // Trigger any loss related effects
         }
@@ -49,17 +72,21 @@ public class Bar : MonoBehaviour
         // Check for Game Over
         if (currentValue < minValue)
         {
-            OnEmpty();
             // Reset value to minimum
             currentValue = minValue;
+
+            // Do any effects
+            OnEmpty();
         }
 
         // Check for On Full
         if (currentValue > maxValue)
         {
-            OnFull();
             // Reset value to maximum
             currentValue = maxValue;
+
+            // Do any effects
+            OnFull();
         }
     }
 
