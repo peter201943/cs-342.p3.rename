@@ -132,6 +132,9 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     public void Correct()
     {
+        // TEMP DEBUG
+        Debug.Log("CORRECT ANSWER");
+
         // Play any side effects
         // TODO FUTURE
 
@@ -147,6 +150,9 @@ public class LoveGame : MonoBehaviour
     /// </summary>
     public void InCorrect()
     {
+        // TEMP DEBUG
+        Debug.Log("WRONG ANSWER");
+
         // Play any side effects
         // TODO FUTURE
 
@@ -168,6 +174,9 @@ public class LoveGame : MonoBehaviour
     /// <param name="change">The amount we change the score by</param>
     private void UpdateScore(int change)
     {
+        // TEMP DEBUG
+        Debug.Log("UPDATE SCORE");
+
         // Update Internal Value
         lovePointsCurrent += change;
 
