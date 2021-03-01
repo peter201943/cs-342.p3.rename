@@ -26,7 +26,7 @@ public class Session : MonoBehaviour
     private void Start()
     {
         // Reset state
-        done = False;
+        done = false;
     }
 
     /// <summary>
