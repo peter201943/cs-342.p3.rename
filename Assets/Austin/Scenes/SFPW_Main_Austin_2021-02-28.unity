@@ -511,6 +511,26 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1676850319}
+    - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
+        type: 3}
+      propertyPath: sessionSpawnDelayMax
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
+        type: 3}
+      propertyPath: sessionSpawnDelayMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
+        type: 3}
+      propertyPath: sessionAnswerDelayMax
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
+        type: 3}
+      propertyPath: sessionAnswerDelayMin
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6072663653535078918, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
         type: 3}
       propertyPath: m_LocalPosition.z
