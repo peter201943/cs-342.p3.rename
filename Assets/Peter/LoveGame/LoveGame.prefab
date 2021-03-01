@@ -340,7 +340,17 @@ MonoBehaviour:
   sessionAnswerDelayMax: 5
   sessionAnswerDelayMin: 0.5
   sessionAnswerDelayDecrementRate: 0.6
-  sessions: []
+  sessions:
+  - {fileID: 1550418170331009090, guid: 1f56c7d77841c9c4a9a2b0ae3196e41e, type: 3}
+  - {fileID: 1550418170331009090, guid: 8602a0576ba6a014789a6b38fb3b5867, type: 3}
+  - {fileID: 1550418170331009090, guid: 83c9070ae2ab2fd4695e5c53b5bddfb3, type: 3}
+  - {fileID: 1550418170331009090, guid: c5f8ed0ed87f22c46be60f8c4ba194d6, type: 3}
+  - {fileID: 1550418170331009090, guid: 6c9de615a58bd8c4696e22b3894f30f3, type: 3}
+  - {fileID: 1550418170331009090, guid: 143c3e44e484f7343b82904e2ea6a820, type: 3}
+  - {fileID: 1550418170331009090, guid: d66306e10bc395c4e86e25b9f651ce4f, type: 3}
+  - {fileID: 1550418170331009090, guid: d3f3a8a248455264b9beb75287cb8ed3, type: 3}
+  - {fileID: 1550418170331009090, guid: cd6b2f87b5e072f41ab2cda3442fe374, type: 3}
+  - {fileID: 1550418170331009090, guid: e802d302817864245ad3ceaf719a69f6, type: 3}
   currentSession: {fileID: 0}
   stopped: 0
   sessionSpawnDelayDifficultyDone: 0
