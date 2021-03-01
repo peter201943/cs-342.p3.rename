@@ -110,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 4520719518051207418, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: No
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6064021860624462896, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -159,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_Text
-      value: Do you love me?
+      value: We have been together for half a year, how many months is that?
       objectReference: {fileID: 0}
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
@@ -199,7 +199,12 @@ PrefabInstance:
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_FontData.m_HorizontalOverflow
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265422353616060104, guid: 90b1d8bec8db55d42bd6156f517e2664,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6265422353616060104, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
@@ -209,7 +214,7 @@ PrefabInstance:
     - target: {fileID: 6265422353616060104, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 445
+      value: 417
       objectReference: {fileID: 0}
     - target: {fileID: 8073428758473651976, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
@@ -269,7 +274,7 @@ PrefabInstance:
     - target: {fileID: 8073428758473651978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_Name
-      value: Session_Do_you_love_me
+      value: Session_Length_of_relationship
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90b1d8bec8db55d42bd6156f517e2664, type: 3}
@@ -389,7 +394,7 @@ PrefabInstance:
     - target: {fileID: 4520719518051207418, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: Yes
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6064021860624462896, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}

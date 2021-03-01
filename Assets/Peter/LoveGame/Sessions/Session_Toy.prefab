@@ -110,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 4520719518051207418, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: No
+      value: Mr. Potato Head
       objectReference: {fileID: 0}
     - target: {fileID: 6064021860624462896, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -159,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_Text
-      value: Do you love me?
+      value: What was the first toy to be advertised on television?
       objectReference: {fileID: 0}
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
@@ -199,7 +199,12 @@ PrefabInstance:
     - target: {fileID: 6028775540692455978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_FontData.m_HorizontalOverflow
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265422353616060104, guid: 90b1d8bec8db55d42bd6156f517e2664,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6265422353616060104, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
@@ -269,7 +274,7 @@ PrefabInstance:
     - target: {fileID: 8073428758473651978, guid: 90b1d8bec8db55d42bd6156f517e2664,
         type: 3}
       propertyPath: m_Name
-      value: Session_Do_you_love_me
+      value: Session_Toy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90b1d8bec8db55d42bd6156f517e2664, type: 3}
@@ -389,7 +394,7 @@ PrefabInstance:
     - target: {fileID: 4520719518051207418, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Text
-      value: Yes
+      value: Slinky
       objectReference: {fileID: 0}
     - target: {fileID: 6064021860624462896, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
