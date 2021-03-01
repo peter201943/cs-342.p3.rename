@@ -43,6 +43,8 @@ public class LoveGame : MonoBehaviour
     public Transform sessionSpawnLocation;
 
     [Header("Question Spawning Difficulty")]
+    // The current time a question can take to spawn
+    public float sessionSpawnDelayCurrent;
     // The max time a question can take to spawn
     public float sessionSpawnDelayMax;
     // The min time a question can take to spawn
@@ -51,7 +53,9 @@ public class LoveGame : MonoBehaviour
     public float sessionSpawnDelayDecrementRate;
 
     [Header("Session Timing Difficulty")]
-    // The max time a question can be show
+    // The current time a question can be shown, DO NOT MODIFY
+    public float sessionAnswerDelayCurrent;
+    // The max time a question can be shown
     public float sessionAnswerDelayMax;
     // The min time a question can be shown
     public float sessionAnswerMin;
@@ -221,9 +225,10 @@ public class LoveGame : MonoBehaviour
 
         // Get reference to session
         Session session = currentSession.GetComponent<Session>();
-        
+
         // Configure the Session
-        // TODO
+        session.loveGame = this;
+        session.currentTime = sessionAnswerDelayCurrent;
     }
 
 }
