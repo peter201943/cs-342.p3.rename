@@ -147,7 +147,7 @@ PrefabInstance:
         type: 3}
       propertyPath: currentSession
       value: 
-      objectReference: {fileID: 8073428758473651978, guid: 90b1d8bec8db55d42bd6156f517e2664,
+      objectReference: {fileID: 1550418170331009090, guid: 8602a0576ba6a014789a6b38fb3b5867,
         type: 3}
     - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
         type: 3}
@@ -172,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
         type: 3}
       propertyPath: sessions.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
         type: 3}
@@ -193,7 +193,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sessions.Array.data[0]
       value: 
-      objectReference: {fileID: 8073428758473651978, guid: 90b1d8bec8db55d42bd6156f517e2664,
+      objectReference: {fileID: 1550418170331009090, guid: 8602a0576ba6a014789a6b38fb3b5867,
         type: 3}
     - target: {fileID: 5080483030105484154, guid: f15bb2a6de02acf48ad7bd53d69a1bc5,
         type: 3}
