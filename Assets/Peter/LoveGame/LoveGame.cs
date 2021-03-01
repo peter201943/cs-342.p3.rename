@@ -208,7 +208,10 @@ public class LoveGame : MonoBehaviour
         Destroy(currentSession);
 
         // Pick Next Session
-        currentSession = Instantiate(sessionQueue.Dequeue(), sessionSpawnLocation.position, Quaternion.identity);
+        currentSession = Instantiate(
+            sessionQueue.Dequeue(),
+            sessionSpawnLocation.position,
+            Quaternion.identity);
 
         // Spawn it
     }
