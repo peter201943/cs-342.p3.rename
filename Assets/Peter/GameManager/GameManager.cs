@@ -18,12 +18,27 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void Start()
     {
-        // Ensure the GameOver action is hidden
-        gameOver.SetActive(false);
+        try
+        {
+            // Ensure the GameOver action is hidden
+            gameOver.SetActive(false);
+        }
+        catch
+        {
 
-        // Ensure the RoundOver action is hidden
-        roundOver.SetActive(false);
+        }
 
+        try
+        {
+            // Ensure the RoundOver action is hidden
+            roundOver.SetActive(false);
+        }
+        catch
+        {
+
+        }
+
+        // Update State
         roundOverBool = false;
     }
 
@@ -33,7 +48,13 @@ public class GameManager : MonoBehaviour
     public void OnGameOver()
     {
         // Show the GameOver action
-        gameOver.SetActive(true);
+        try
+        {
+            gameOver.SetActive(true);
+        }
+        catch
+        {
+        }
     }
 
     /// <summary>
@@ -56,6 +77,12 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void RoundStart()
     {
-        roundOver.SetActive(false);
+        try
+        {
+            roundOver.SetActive(false);
+        }
+        catch
+        {
+        }
     }
 }
