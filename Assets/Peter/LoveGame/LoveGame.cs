@@ -32,11 +32,15 @@ public class LoveGame : MonoBehaviour
     // TODO FUTURE
     // public int lovePointsMaxDecrementRound;
 
-    [Header("External References")]
+    [Header("Instance External References")]
     // Who we update with our score
     public Bar loveBar;
     // Who we notify of GameOver, etc
     public GameManager gameManager;
+
+    [Header("Prefab External References")]
+    // Where we spawn sessions
+    public Transform sessionSpawnLocation;
 
     [Header("Question Spawning Difficulty")]
     // The max time a question can take to spawn
@@ -79,7 +83,7 @@ public class LoveGame : MonoBehaviour
         NewQueue();
 
         // Pick our first Session
-        currentSession = sessionQueue.Dequeue();
+        SpawnSession();
 
         // Reset the Score
         lovePointsCurrent = lovePointsStart;
@@ -185,11 +189,28 @@ public class LoveGame : MonoBehaviour
         // tell session to start with our time values
     }
 
+    /// <summary>
+    /// Each frame, adjust the difficulty timers
+    /// </summary>
     private void DifficultyUpdate()
     {
         // Spawn Difficulty
 
         // Message Difficulty
+    }
+
+    /// <summary>
+    /// Handles everything regarding spawning a new session
+    /// </summary>
+    private void SpawnSession()
+    {
+        // Delete the Current Session
+        Destroy(currentSession);
+
+        // Pick Next Session
+        currentSession = Instantiate(sessionQueue.Dequeue(), sessionSpawnLocation.position, Quaternion.identity);
+
+        // Spawn it
     }
 
 }

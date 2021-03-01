@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     // Image/Text/Audio activated on Round Over
     public GameObject roundOver;
 
+    private bool roundOverBool;
+
     /// <summary>
     /// Player has started the game
     /// </summary>
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour
 
         // Ensure the RoundOver action is hidden
         roundOver.SetActive(false);
+
+        roundOverBool = false;
     }
 
     /// <summary>
@@ -37,8 +41,14 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void RoundOver()
     {
-        // Show the RoundOver action
-        roundOver.SetActive(true);
+        if (!roundOverBool)
+        {
+            // Stop Checking
+            roundOverBool = true;
+
+            // Show the RoundOver action
+            roundOver.SetActive(true);
+        }
     }
 
     /// <summary>
