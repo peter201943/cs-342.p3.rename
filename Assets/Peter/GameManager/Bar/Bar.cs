@@ -34,14 +34,14 @@ public class Bar : MonoBehaviour
     /// <summary>
     /// Configures the slider at startup
     /// </summary>
-    void Start()
+    private void Start()
     {
         slider.maxValue = maxValue;
         slider.minValue = minValue;
         slider.value = currentValue;
     }
 
-    void UpdateScore(int amount)
+    public void UpdateScore(int amount)
     {
         // Positive Values
         if (amount > 0)
@@ -93,7 +93,7 @@ public class Bar : MonoBehaviour
     /// <summary>
     /// If we meet our minimum value, tell the game manager we have failed
     /// </summary>
-    void OnEmpty()
+    private void OnEmpty()
     {
         gameManager.OnGameOver();
     }
@@ -101,7 +101,7 @@ public class Bar : MonoBehaviour
     /// <summary>
     /// Any events we want to have happen when we exceed our maximum
     /// </summary>
-    void OnFull()
+    private void OnFull()
     {
     }
 }
