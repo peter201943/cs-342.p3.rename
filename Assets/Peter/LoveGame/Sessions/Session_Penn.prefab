@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 1442574227194525279, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Name
-      value: AnswerNo
+      value: AnswerPenn
       objectReference: {fileID: 0}
     - target: {fileID: 4286797702232637426, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
@@ -139,6 +139,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28374c6fc80379e4ca8e8dfa65b32f43, type: 3}
+--- !u!1 &4412972893342436486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1442574227194525279, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
+    type: 3}
+  m_PrefabInstance: {fileID: 2970980383497829081}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7317968632000718664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -277,6 +283,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Session_Penn
       objectReference: {fileID: 0}
+    - target: {fileID: 8073428758473651979, guid: 90b1d8bec8db55d42bd6156f517e2664,
+        type: 3}
+      propertyPath: goodAnswers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073428758473651979, guid: 90b1d8bec8db55d42bd6156f517e2664,
+        type: 3}
+      propertyPath: goodAnswers.Array.data[0]
+      value: 
+      objectReference: {fileID: 4412972893342436486}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90b1d8bec8db55d42bd6156f517e2664, type: 3}
 --- !u!4 &1550418170331009088 stripped
@@ -350,7 +366,7 @@ PrefabInstance:
     - target: {fileID: 1442574227194525279, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
       propertyPath: m_Name
-      value: AnswerYes
+      value: AnswerNo
       objectReference: {fileID: 0}
     - target: {fileID: 4286797702232637426, guid: 28374c6fc80379e4ca8e8dfa65b32f43,
         type: 3}
