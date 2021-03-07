@@ -35,7 +35,7 @@ public class LoveGameCursor : MonoBehaviour
             if ( leftMax.position.x < transform.position.x )
             {
                 // TEMP DEBUG
-                Debug.Log("Moving Left");
+                // Debug.Log("Moving Left");
 
                 // Move Cursor Left
                 transform.Translate(leftward * moveSpeed * Time.deltaTime, Space.World);
@@ -43,7 +43,7 @@ public class LoveGameCursor : MonoBehaviour
             else
             {
                 // TEMP DEBUG
-                Debug.Log("Cannot move Left");
+                // Debug.Log("Cannot move Left");
             }
         }
 
@@ -54,7 +54,7 @@ public class LoveGameCursor : MonoBehaviour
             if ( transform.position.x < rightMax.position.x )
             {
                 // TEMP DEBUG
-                Debug.Log("Moving Right");
+                // Debug.Log("Moving Right");
 
                 // Move Cursor Right
                 transform.Translate(rightward * moveSpeed * Time.deltaTime, Space.World);
@@ -62,7 +62,7 @@ public class LoveGameCursor : MonoBehaviour
             else
             {
                 // TEMP DEBUG
-                Debug.Log("Cannot move Right");
+                // Debug.Log("Cannot move Right");
             }
         }
     }
