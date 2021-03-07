@@ -473,7 +473,7 @@ MonoBehaviour:
   Paper:
   - {fileID: 7781365088120304885, guid: 7ded23bbb9dc8c447aa22a17bf2c255f, type: 3}
   - {fileID: 2405266310447727697, guid: 8dbfc85f4bcaaf341bad61791f4181d1, type: 3}
-  Money: {fileID: 7271911731875290367}
+  Money: {fileID: 0}
   spawnRate: 2
   Xmin: -12
   Xmax: -2
@@ -482,6 +482,12 @@ MonoBehaviour:
   MaxSpawnTimes: 50
   MoneyAmount: 1
   StartSpawnTime: 1
+  ChangeSpawnRateTime1: 10
+  ChangeSpawnRateTime2: 30
+  ChangeSpawnRate1: 1.5
+  ChangeSpawnRate2: 1
+  ChangeGraviteScale1: 1
+  ChangeGraviteScale2: 1.5
 --- !u!1 &7271911732317203408
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e7fd0a6f1287d48ab3858bc90de558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Money: {fileID: 7271911731875290367}
+  Money: {fileID: 0}
   MoneyReduceAmount: 1
   SP: {fileID: 0}
 --- !u!1 &7271911732634085595
