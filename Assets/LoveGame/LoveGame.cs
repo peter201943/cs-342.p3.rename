@@ -12,6 +12,11 @@ using UnityEngine;
 /// TODO FUTURE
 /// * Add a timer/slider at bottom of screen showing how much time to answer a question remains
 /// * Adjust the max love points to be smaller and smaller over time - also add effects to indicate such!
+/// 
+/// NOTICE 2021-03-07
+/// Making drastic changes to this script
+/// Turning into top-down rails-shooter
+/// Beware, many incorrect comments present
 /// </summary>
 public class LoveGame : MonoBehaviour
 {
