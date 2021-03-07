@@ -18,18 +18,18 @@ public class LoveGameCursor : MonoBehaviour
     public Transform rightMax;
 
     // How fast we can travel
-    public float moveSpeed;
+    public float moveSpeed = 400;
 
     // Move Directions
-    private Vector3 leftward  = new Vector3(0, 1, 0);
-    private Vector3 rightward = new Vector3(0, -1, 0);
+    private Vector3 leftward  = new Vector3(-1,  0,  0);
+    private Vector3 rightward = new Vector3( 1,  0,  0);
 
 
     // Check for Inputs
     private void Update()
     {
         // Move Left
-        if ( Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) )
+        if ( Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) )
         {
             // Do not proceed outside bounds
             if ( leftMax.position.x < transform.position.x )
@@ -48,10 +48,10 @@ public class LoveGameCursor : MonoBehaviour
         }
 
         // Move Right
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             // Do not proceed outside bounds
-            if (rightMax.position.x < transform.position.x)
+            if ( transform.position.x < rightMax.position.x )
             {
                 // TEMP DEBUG
                 Debug.Log("Moving Right");
