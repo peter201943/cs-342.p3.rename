@@ -28,17 +28,17 @@ public class SpawnPaper: MonoBehaviour
     private void Update()
     {
         GameStartTime = GameStartTime + Time.deltaTime;
-        if(GameStartTime >= 10 && PlusSpeed1 == false)
-        {
-            
-            spawnRate = 3;
-            PlusSpeed1 = true;
-            
-        }
-        if (GameStartTime >= 40 && PlusSpeed2 == false)
+        if (GameStartTime >= ChangeSpawnRateTime1 && PlusSpeed1 == false)
         {
 
-            spawnRate = 2;
+            spawnRate = ChangeSpawnRate1;
+            PlusSpeed1 = true;
+
+        }
+        if (GameStartTime >= ChangeSpawnRateTime2 && PlusSpeed2 == false)
+        {
+
+            spawnRate = ChangeSpawnRate2;
             PlusSpeed2 = true;
 
         }
@@ -47,22 +47,33 @@ public class SpawnPaper: MonoBehaviour
         else
         {
             SpawnTimecounter = SpawnTimecounter + Time.deltaTime;
-           // Debug.Log(SpawnTimecounter);
+            // Debug.Log(SpawnTimecounter);
         }
         if (Startspawn == true)
         {
-            if (Time.time > nextSpawn && SpawnTimes < MaxSpawnTimes)
+            if (Time.time > nextSpawn)   // && SpawnTimes < MaxSpawnTimes)
             {
                 nextSpawn = Time.time + spawnRate;
                 SpawnTimes = SpawnTimes + 1;
                 spawnLocation = new Vector2(Random.Range(Xmin, Xmax), Y);
-                
-               GameObject newpaper = Instantiate(Paper[Random.Range(0, MaxType)], spawnLocation, Quaternion.identity);
+
+                GameObject newpaper = Instantiate(Paper[Random.Range(0, MaxType)], spawnLocation, Quaternion.identity);
                 newpaper.GetComponent<PaperHover>().Money = Money;
                 newpaper.GetComponent<PaperHover>().MoneyAmount = MoneyAmount;
+                if (PlusSpeed1 == true)
+                {
+                    newpaper.GetComponent<Rigidbody2D>().gravityScale = ChangeGraviteScale1;
+
+                }
+
+                if (PlusSpeed2 == true)
+                {
+                    newpaper.GetComponent<Rigidbody2D>().gravityScale = ChangeGraviteScale2;
+
+                }
             }
 
-            
+
         }
     }
 }
