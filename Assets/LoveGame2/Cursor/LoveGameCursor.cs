@@ -34,8 +34,16 @@ public class LoveGameCursor : MonoBehaviour
             // Do not proceed outside bounds
             if ( leftMax.position.x < transform.position.x )
             {
+                // TEMP DEBUG
+                Debug.Log("Moving Left");
+
                 // Move Cursor Left
                 transform.Translate(leftward * moveSpeed * Time.deltaTime, Space.World);
+            }
+            else
+            {
+                // TEMP DEBUG
+                Debug.Log("Cannot move Left");
             }
         }
 
@@ -45,8 +53,16 @@ public class LoveGameCursor : MonoBehaviour
             // Do not proceed outside bounds
             if (rightMax.position.x < transform.position.x)
             {
+                // TEMP DEBUG
+                Debug.Log("Moving Right");
+
                 // Move Cursor Right
                 transform.Translate(rightward * moveSpeed * Time.deltaTime, Space.World);
+            }
+            else
+            {
+                // TEMP DEBUG
+                Debug.Log("Cannot move Right");
             }
         }
     }
