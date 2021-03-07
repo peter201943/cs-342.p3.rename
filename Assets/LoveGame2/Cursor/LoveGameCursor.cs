@@ -12,10 +12,10 @@ using UnityEngine;
 public class LoveGameCursor : MonoBehaviour
 {
     // How far left we can travel
-    public float leftMax;
+    public Transform leftMax;
 
     // How far right we can travel
-    public float rightMax;
+    public Transform rightMax;
 
     // How fast we can travel
     public float moveSpeed;
@@ -24,6 +24,7 @@ public class LoveGameCursor : MonoBehaviour
     private Vector3 leftward  = new Vector3(0, 1, 0);
     private Vector3 rightward = new Vector3(0, -1, 0);
 
+
     // Check for Inputs
     private void Update()
     {
@@ -31,7 +32,7 @@ public class LoveGameCursor : MonoBehaviour
         if ( Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) )
         {
             // Do not proceed outside bounds
-            if ( leftMax < transform.position.x )
+            if ( leftMax.position.x < transform.position.x )
             {
                 // Move Cursor Left
                 transform.Translate(leftward * moveSpeed * Time.deltaTime, Space.World);
@@ -42,7 +43,7 @@ public class LoveGameCursor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             // Do not proceed outside bounds
-            if (rightMax < transform.position.x)
+            if (rightMax.position.x < transform.position.x)
             {
                 // Move Cursor Right
                 transform.Translate(rightward * moveSpeed * Time.deltaTime, Space.World);
