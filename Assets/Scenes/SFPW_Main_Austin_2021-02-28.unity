@@ -1287,6 +1287,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver
       objectReference: {fileID: 0}
+    - target: {fileID: 8536869753749403044, guid: 23b084e6aab2be44db6ec15c38fc27e5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536869753749403044, guid: 23b084e6aab2be44db6ec15c38fc27e5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536869753749403044, guid: 23b084e6aab2be44db6ec15c38fc27e5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 262
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734739484782551710, guid: 23b084e6aab2be44db6ec15c38fc27e5,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734739484782551710, guid: 23b084e6aab2be44db6ec15c38fc27e5,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734739484782551710, guid: 23b084e6aab2be44db6ec15c38fc27e5,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734739484782551710, guid: 23b084e6aab2be44db6ec15c38fc27e5,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23b084e6aab2be44db6ec15c38fc27e5, type: 3}
 --- !u!1 &8558589180046543317 stripped
