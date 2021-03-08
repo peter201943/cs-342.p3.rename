@@ -11,6 +11,7 @@ public class Tweaker : LoveGameBehavior
         currentDelay -= Time.deltaTime;
         if (currentDelay < 0.0f)
         {
+            Debug.Log("Tweak!");
             currentDelay = delay;
             subject.delay -= rate;
         }
