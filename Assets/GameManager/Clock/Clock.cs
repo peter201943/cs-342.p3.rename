@@ -6,6 +6,7 @@ using UnityEngine;
 /// Used to show remaining Round Time
 /// An analog clock, with hands
 /// NOTICE ONLY USING MINUTE HAND, HOUR HAND NOT IMPLEMENTED
+/// <see href="https://docs.unity3d.com/ScriptReference/Transform.Rotate.html">Transform.Rotate</see>
 /// </summary>
 public class Clock : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Clock : MonoBehaviour
 
     // We also rotate this about the face, albeit more slowly
     // TODO FUTURE
-    // public GameObject hourHand;
+    public GameObject hourHand;
 
     // Who we notify on round over
     public GameManager gameManager;
@@ -45,12 +46,15 @@ public class Clock : MonoBehaviour
             // Remove time while time remains
             currentTime -= Time.deltaTime;
 
-            // Update the Clock Hands
-            // TODO
+            // Update the Minute Hand
+            minuteHand.transform.Rotate(0.0f, 0.0f, Time.deltaTime, Space.Self);
+
+            // Update the Hour Hand
+            hourHand.transform.Rotate(0.0f, 0.0f, Time.deltaTime / 4, Space.Self);
         }
 
         // Do something only once, when time stops
-        if (!stopped)
+        if (!stopped && currentTime < 0.0f)
         {
             TimeOut();
         }
@@ -63,6 +67,8 @@ public class Clock : MonoBehaviour
     {
         // Alert the game manager the time is up
         gameManager.RoundOver();
+
+        stopped = true;
     }
 
 }
