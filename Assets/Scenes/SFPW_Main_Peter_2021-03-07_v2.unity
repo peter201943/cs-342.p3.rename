@@ -696,8 +696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Paper:
-  - {fileID: 7781365088120304885, guid: 7ded23bbb9dc8c447aa22a17bf2c255f, type: 3}
-  - {fileID: 2405266310447727697, guid: 8dbfc85f4bcaaf341bad61791f4181d1, type: 3}
+  - {fileID: 7781365088120304885, guid: 300e5470fce0c4340971de284e3d3eca, type: 3}
+  - {fileID: 7781365088120304885, guid: d07be60c7caf2e44eab828e42ae42516, type: 3}
   Money: {fileID: 366131178}
   spawnRate: 2
   Xmin: 6
