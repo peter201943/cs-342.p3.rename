@@ -9,6 +9,7 @@ public class PaperHover : MonoBehaviour
     public GameObject Pattern;
     public Slider Money;
     public int MoneyAmount;
+    public AudioSource CollectSound, GoodSoundFX, BadSoundFX;
     void Start()
     {
         
@@ -22,24 +23,28 @@ public class PaperHover : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (!Pattern.activeInHierarchy)
+        {
+            CollectSound.Play();
+        }
         Pattern.SetActive(true);
-        
+
         // TEMP DEBUG
         // Debug.Log("Ha");
     }
   
     public void SendMoney()
     {
-        if(this.gameObject.tag == "Right")
+        if (this.gameObject.tag == "Right")
         {
             Money.value = Money.value + MoneyAmount;
-            Destroy(this.gameObject);
         }
 
         if(this.gameObject.tag == "Wrong")
         {
             Money.value = Money.value - MoneyAmount;
-            Destroy(this.gameObject);
         }
+        Destroy(this.gameObject);
     }
+
 }
