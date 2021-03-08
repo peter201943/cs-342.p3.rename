@@ -515,6 +515,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -166
       objectReference: {fileID: 0}
+    - target: {fileID: 5520038093845921903, guid: a40ab22615280d141b8e04cd0ef64fef,
+        type: 3}
+      propertyPath: startTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520038093845921903, guid: a40ab22615280d141b8e04cd0ef64fef,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 294459881666632442}
     - target: {fileID: 5698729320080257421, guid: a40ab22615280d141b8e04cd0ef64fef,
         type: 3}
       propertyPath: m_LocalScale.x
