@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e7fd0a6f1287d48ab3858bc90de558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Money: {fileID: 366131178}
+  Money: {fileID: 1472362431}
   MoneyReduceAmount: 1
   SP: {fileID: 5195174236213585464}
 --- !u!61 &5195174235996448630
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 8321707131857698249}
   - component: {fileID: 5080483028329614456}
   m_Layer: 0
-  m_Name: LoveGame
+  m_Name: LoveGame4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
