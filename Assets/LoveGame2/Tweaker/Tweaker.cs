@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VariantTweaker : LoveGameBehavior
+public class Tweaker : LoveGameBehavior
 {
     private float currentDelay;
 
