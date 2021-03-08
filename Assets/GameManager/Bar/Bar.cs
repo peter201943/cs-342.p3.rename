@@ -134,7 +134,7 @@ public class Bar : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        if ( slider.value < 0.0f )
+        if ( slider.value <= 0.0f )
         {
             gameManager.OnGameOver();
         }
