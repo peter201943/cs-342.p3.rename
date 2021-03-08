@@ -272,8 +272,6 @@ MonoBehaviour:
   Money: {fileID: 0}
   MoneyAmount: 1
   CollectSound: {fileID: 0}
-  GoodSoundFX: {fileID: 0}
-  BadSoundFX: {fileID: 0}
 --- !u!114 &8887907756900089373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,3 +284,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4779772b6d2f9a042aa8021b0358a238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollectSound: {fileID: 0}

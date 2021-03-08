@@ -9,10 +9,10 @@ public class PaperHover : MonoBehaviour
     public GameObject Pattern;
     public Slider Money;
     public int MoneyAmount;
-    public AudioSource CollectSound, GoodSoundFX, BadSoundFX;
+    public AudioSource CollectSound, BadSound;
     void Start()
     {
-        
+        BadSound = GameObject.Find("BadSFX").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,6 +42,7 @@ public class PaperHover : MonoBehaviour
 
         if(this.gameObject.tag == "Wrong")
         {
+            BadSound.Play();
             Money.value = Money.value - MoneyAmount;
         }
         Destroy(this.gameObject);
