@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: b50717ddd2438204eb771cf99f7ac0f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6066661443699151715
+    second: SticklerForPaperworkbg 1_0
+  - first:
+      213: -3456887213122585320
+    second: SticklerForPaperworkbg 1_1
+  - first:
+      213: 6047776688812743278
+    second: SticklerForPaperworkbg 1_2
+  - first:
+      213: 4647002562815194411
+    second: SticklerForPaperworkbg 1_3
+  - first:
+      213: 267225941246007029
+    second: SticklerForPaperworkbg 1_4
+  - first:
+      213: 1549068737184451984
+    second: SticklerForPaperworkbg 1_5
+  - first:
+      213: 6700689043628088792
+    second: SticklerForPaperworkbg 1_6
+  - first:
+      213: 7001726953738451420
+    second: SticklerForPaperworkbg 1_7
+  - first:
+      213: 7862004165611912382
+    second: SticklerForPaperworkbg 1_8
+  - first:
+      213: 5534966647236635361
+    second: SticklerForPaperworkbg 1_9
+  - first:
+      213: -8813420786927987460
+    second: SticklerForPaperworkbg 1_10
+  - first:
+      213: 600270481673354149
+    second: SticklerForPaperworkbg 1_11
+  - first:
+      213: -8893955737648544375
+    second: SticklerForPaperworkbg 1_12
+  - first:
+      213: 7594215092621661563
+    second: SticklerForPaperworkbg 1_13
+  - first:
+      213: -7968280926084311975
+    second: SticklerForPaperworkbg 1_14
+  - first:
+      213: -3800164221767049663
+    second: SticklerForPaperworkbg 1_15
+  - first:
+      213: -2607001044561984283
+    second: SticklerForPaperworkbg 1_16
+  - first:
+      213: -3522720937632610847
+    second: SticklerForPaperworkbg 1_17
+  - first:
+      213: -3644360964280003849
+    second: SticklerForPaperworkbg 1_18
+  - first:
+      213: 5163565563755417292
+    second: SticklerForPaperworkbg 1_19
+  - first:
+      213: -467093467559674320
+    second: SticklerForPaperworkbg 1_20
+  - first:
+      213: -4003122066973103138
+    second: SticklerForPaperworkbg 1_21
+  - first:
+      213: -3238264854406806255
+    second: SticklerForPaperworkbg 1_22
+  - first:
+      213: -180541736672308222
+    second: SticklerForPaperworkbg 1_23
+  - first:
+      213: 2992222903925337783
+    second: SticklerForPaperworkbg 1_24
+  - first:
+      213: 5620210652590436128
+    second: SticklerForPaperworkbg 1_25
+  - first:
+      213: -6212247871956855445
+    second: SticklerForPaperworkbg 1_26
+  - first:
+      213: -7915071618496530589
+    second: SticklerForPaperworkbg 1_27
+  - first:
+      213: 4945771308466018363
+    second: SticklerForPaperworkbg 1_28
+  - first:
+      213: 2079172618499818372
+    second: SticklerForPaperworkbg 1_29
+  - first:
+      213: -6726978146937015151
+    second: SticklerForPaperworkbg 1_30
+  - first:
+      213: 8264639370204814821
+    second: SticklerForPaperworkbg 1_31
+  - first:
+      213: 8246864881495405527
+    second: SticklerForPaperworkbg 1_32
+  - first:
+      213: 6113746241461700235
+    second: SticklerForPaperworkbg 1_33
+  - first:
+      213: -8019383331352176211
+    second: SticklerForPaperworkbg 1_34
+  - first:
+      213: -8127375900919317764
+    second: SticklerForPaperworkbg 1_35
+  - first:
+      213: -9080906522881344370
+    second: SticklerForPaperworkbg 1_36
+  - first:
+      213: -7921998188966656417
+    second: SticklerForPaperworkbg 1_37
+  - first:
+      213: -3678906344307067139
+    second: SticklerForPaperworkbg 1_38
+  - first:
+      213: 1135985861037299464
+    second: SticklerForPaperworkbg 1_39
+  - first:
+      213: 6463231201517334400
+    second: SticklerForPaperworkbg 1_40
+  - first:
+      213: -4909622594132782725
+    second: SticklerForPaperworkbg 1_41
+  - first:
+      213: 723086685209526952
+    second: SticklerForPaperworkbg 1_42
+  - first:
+      213: -8544951698707944346
+    second: SticklerForPaperworkbg 1_43
+  - first:
+      213: 8145279066571683565
+    second: SticklerForPaperworkbg 1_44
+  - first:
+      213: 7765118652306393427
+    second: SticklerForPaperworkbg 1_45
+  - first:
+      213: 233739891995899827
+    second: SticklerForPaperworkbg 1_46
+  - first:
+      213: 5048741836307700664
+    second: SticklerForPaperworkbg 1_47
+  - first:
+      213: 2404803560169846653
+    second: SticklerForPaperworkbg 1_48
+  - first:
+      213: 1677535527485658968
+    second: SticklerForPaperworkbg 1_49
+  - first:
+      213: 2748967896157774121
+    second: SticklerForPaperworkbg 1_50
+  - first:
+      213: 8343118275109346035
+    second: SticklerForPaperworkbg 1_51
+  - first:
+      213: 5035961655569430491
+    second: SticklerForPaperworkbg 1_52
+  - first:
+      213: -7725683313626488111
+    second: SticklerForPaperworkbg 1_53
+  - first:
+      213: -4187431997579768753
+    second: SticklerForPaperworkbg 1_54
+  - first:
+      213: 9044667112491376424
+    second: SticklerForPaperworkbg 1_55
+  - first:
+      213: -7545174245486039015
+    second: SticklerForPaperworkbg 1_56
+  - first:
+      213: -9003285672001697657
+    second: SticklerForPaperworkbg 1_57
+  - first:
+      213: -4081833104102547420
+    second: SticklerForPaperworkbg 1_58
+  - first:
+      213: -4864096126869077601
+    second: SticklerForPaperworkbg 1_59
+  - first:
+      213: -1176625950345127999
+    second: SticklerForPaperworkbg 1_60
+  - first:
+      213: 4049875084204981659
+    second: SticklerForPaperworkbg 1_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SticklerForPaperworkbg 1_21
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 442
+        width: 250
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb6a8580bd0278c0800000000000000
+      internalID: -4003122066973103138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SticklerForPaperworkbg 1_22
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 275
+        width: 170
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1154370a54f5f03d0800000000000000
+      internalID: -3238264854406806255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
