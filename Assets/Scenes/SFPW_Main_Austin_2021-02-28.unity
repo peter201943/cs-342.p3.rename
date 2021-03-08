@@ -960,7 +960,7 @@ GameObject:
   - component: {fileID: 5195174236213585465}
   - component: {fileID: 5195174236213585464}
   m_Layer: 0
-  m_Name: Work Game Manager
+  m_Name: Love Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
