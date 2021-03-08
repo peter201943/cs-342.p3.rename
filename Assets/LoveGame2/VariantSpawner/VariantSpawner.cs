@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VariantSpawner : MonoBehaviour
+public class VariantSpawner : LoveGameBehavior
 {
-    public List<GameObject> subjects;
-    public float delay = 5.0f;
     private float currentDelay = 0.0f;
     private int next = 0;
     public GameObject spawnParent;
