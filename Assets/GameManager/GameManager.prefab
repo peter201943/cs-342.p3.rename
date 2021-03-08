@@ -133,9 +133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 4536368786085563187}
-  delay: 5
-  rate: 2
-  delayRate: 1.5
+  delay: 2
+  rate: 0.3
+  delayRate: 1.1
 --- !u!114 &5384582266164928103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,9 +149,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 4573653919404307576}
-  delay: 5
-  rate: 2
-  delayRate: 1.5
+  delay: 2
+  rate: 0.3
+  delayRate: 1.1
 --- !u!1 &2685199229947133539
 GameObject:
   m_ObjectHideFlags: 0
