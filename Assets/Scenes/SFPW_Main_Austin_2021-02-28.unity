@@ -367,6 +367,16 @@ PrefabInstance:
       propertyPath: ChangeGraviteScale2
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7271911732267903644, guid: c30076ac2f9dda14491d6f018e702aba,
+        type: 3}
+      propertyPath: ChangeSpawnRateTime1
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7271911732267903644, guid: c30076ac2f9dda14491d6f018e702aba,
+        type: 3}
+      propertyPath: ChangeSpawnRateTime2
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 7271911732317203409, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
       propertyPath: SP
@@ -854,8 +864,8 @@ MonoBehaviour:
   MaxSpawnTimes: 50
   MoneyAmount: 1
   StartSpawnTime: 1
-  ChangeSpawnRateTime1: 10
-  ChangeSpawnRateTime2: 30
+  ChangeSpawnRateTime1: 30
+  ChangeSpawnRateTime2: 60
   ChangeSpawnRate1: 1.5
   ChangeSpawnRate2: 1
   ChangeGraviteScale1: 0.2
