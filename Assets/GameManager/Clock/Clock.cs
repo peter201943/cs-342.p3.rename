@@ -24,7 +24,7 @@ public class Clock : MonoBehaviour
     public float currentTime;
 
     // What time we start with
-    public float startTime;
+    public float startTime = 90.0f;
 
     // When we are not runnin
     private bool stopped;
