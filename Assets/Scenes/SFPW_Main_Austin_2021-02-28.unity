@@ -512,6 +512,16 @@ PrefabInstance:
       propertyPath: m_BlockingMask.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1694474612661345840, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694474612661345840, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1828674140352015846, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
       propertyPath: m_SortingOrder
@@ -530,6 +540,11 @@ PrefabInstance:
     - target: {fileID: 1985233120007325621, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
       propertyPath: m_OverridePixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444033983561888822, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2444033983561888822, guid: 9d15f5e967e8b2649ab1689b099fda1b,
@@ -561,6 +576,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015084273473409388, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4678808782328275263, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
@@ -632,6 +652,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7957255774574676008, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8414430792402292446, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
       propertyPath: slider
@@ -681,6 +706,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941811870619019130, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941811870619019130, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -423
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d15f5e967e8b2649ab1689b099fda1b, type: 3}
