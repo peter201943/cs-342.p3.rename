@@ -5,22 +5,28 @@ using UnityEngine;
 public class VariantSpawner : MonoBehaviour
 {
     public List<GameObject> subjects;
-    public float delay = 20f;
+    public float delay = 5.0f;
     private float currentDelay = 0.0f;
     private int next = 0;
+    public GameObject spawnParent;
 
     private void Update()
     {
         currentDelay -= Time.deltaTime;
-        if ( currentDelay < delay )
+        if ( currentDelay < 0.0f )
         {
             currentDelay = delay;
             next++;
-            if ( next > subjects.Count )
+            if ( next > subjects.Count - 1 )
             {
                 next = 0;
             }
-            Instantiate( subjects[next], transform.position, Quaternion.identity );
+            GameObject newSubject = Instantiate(
+                subjects[next],
+                transform.position,
+                Quaternion.identity
+            );
+            newSubject.transform.SetParent(spawnParent.transform);
         }
     }
 }
