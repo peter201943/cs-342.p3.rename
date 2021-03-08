@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2405266309923620141}
   - component: {fileID: 2405266309923620140}
   - component: {fileID: 2405266309923620143}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2405266310219343992}
   - component: {fileID: 2405266310219343993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 2405266310447727727}
   - component: {fileID: 2405266310447727726}
   - component: {fileID: 2405266310447727725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WrongPaper (1)
   m_TagString: Wrong
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.15989494, y: -0.033901334}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 2405266310587280540}
   - component: {fileID: 2405266310587280543}
   - component: {fileID: 2405266310587280542}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
