@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         // Show the GameOver action
         try
         {
+            Debug.Log("YOU FAILED");
             gameOver.SetActive(true);
         }
         catch
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
             // Show the RoundOver action
             try
             {
+                Debug.Log("YOU SURVIVED");
                 roundOver.SetActive(true);
             }
             catch
