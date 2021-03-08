@@ -104,4 +104,68 @@ public class Bar : MonoBehaviour
     private void OnFull()
     {
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /// <summary>
+    /// UTTER hijacking of thisc script
+    /// </summary>
+    private void Update()
+    {
+        if ( slider.value < 0.0f )
+        {
+            gameManager.OnGameOver();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
