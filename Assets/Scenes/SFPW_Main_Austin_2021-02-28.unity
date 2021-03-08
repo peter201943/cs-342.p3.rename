@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e7fd0a6f1287d48ab3858bc90de558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Money: {fileID: 366131178}
+  Money: {fileID: 1472362431}
   MoneyReduceAmount: 1
   SP: {fileID: 5195174236213585464}
 --- !u!61 &5195174235996448630
@@ -843,9 +843,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Paper:
-  - {fileID: 7781365088120304885, guid: 7ded23bbb9dc8c447aa22a17bf2c255f, type: 3}
-  - {fileID: 2405266310447727697, guid: 8dbfc85f4bcaaf341bad61791f4181d1, type: 3}
-  Money: {fileID: 366131178}
+  - {fileID: 7781365088120304885, guid: 300e5470fce0c4340971de284e3d3eca, type: 3}
+  - {fileID: 7781365088120304885, guid: d07be60c7caf2e44eab828e42ae42516, type: 3}
+  Money: {fileID: 1472362431}
   spawnRate: 2
   Xmin: 6
   Xmax: 18
@@ -1391,6 +1391,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoveGame2Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3161365558611634062, guid: 236a0a5b3f1039944a24330e6674d210,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 236a0a5b3f1039944a24330e6674d210, type: 3}
