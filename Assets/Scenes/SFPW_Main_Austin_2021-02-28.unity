@@ -285,7 +285,7 @@ PrefabInstance:
     - target: {fileID: 7271911731962979946, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7271911731962979946, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
@@ -360,7 +360,7 @@ PrefabInstance:
     - target: {fileID: 7271911732267903644, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
       propertyPath: ChangeGraviteScale1
-      value: 0.2
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7271911732267903644, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
@@ -370,12 +370,12 @@ PrefabInstance:
     - target: {fileID: 7271911732267903644, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
       propertyPath: ChangeSpawnRateTime1
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7271911732267903644, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
       propertyPath: ChangeSpawnRateTime2
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7271911732317203409, guid: c30076ac2f9dda14491d6f018e702aba,
         type: 3}
@@ -440,7 +440,7 @@ PrefabInstance:
     - target: {fileID: 294459881666632443, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 294459881666632443, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
@@ -511,6 +511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531034225422137344, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: startTime
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1694474612661345840, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
@@ -651,6 +656,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332702892718351687, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332702892718351687, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332702892718351687, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332702892718351687, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332702892718351687, guid: 9d15f5e967e8b2649ab1689b099fda1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 7957255774574676008, guid: 9d15f5e967e8b2649ab1689b099fda1b,
         type: 3}
@@ -899,11 +929,11 @@ MonoBehaviour:
   MaxSpawnTimes: 50
   MoneyAmount: 1
   StartSpawnTime: 1
-  ChangeSpawnRateTime1: 30
-  ChangeSpawnRateTime2: 60
+  ChangeSpawnRateTime1: 25
+  ChangeSpawnRateTime2: 50
   ChangeSpawnRate1: 1.5
   ChangeSpawnRate2: 1
-  ChangeGraviteScale1: 0.2
+  ChangeGraviteScale1: 0.25
   ChangeGraviteScale2: 0.4
 --- !u!4 &5195174236213585465
 Transform:
@@ -1213,7 +1243,7 @@ Transform:
   - {fileID: 8321707131051427314}
   - {fileID: 1840115253230119859}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8558589180046543316
 PrefabInstance:

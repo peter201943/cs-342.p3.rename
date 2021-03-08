@@ -52,10 +52,10 @@ public class Clock : MonoBehaviour
             currentTime -= Time.deltaTime;
 
             // Update the Minute Hand
-            minuteHand.transform.Rotate(0.0f, 0.0f, Time.deltaTime, Space.Self);
+            minuteHand.transform.Rotate(0.0f, 0.0f, 48 * Time.deltaTime, Space.Self);
 
             // Update the Hour Hand
-            hourHand.transform.Rotate(0.0f, 0.0f, Time.deltaTime / 4, Space.Self);
+            hourHand.transform.Rotate(0.0f, 0.0f, 4 * Time.deltaTime, Space.Self);
         }
 
         // Do something only once, when time stops
