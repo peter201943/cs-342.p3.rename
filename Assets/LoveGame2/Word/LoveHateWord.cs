@@ -8,7 +8,7 @@ public enum Emotion
     Hate
 };
 
-public class LoveHateWord : MonoBehaviour
+public class LoveHateWord : LoveGameBehavior
 {
     public Emotion emotion = Emotion.Love;
     public float lifetime = 5.0f;

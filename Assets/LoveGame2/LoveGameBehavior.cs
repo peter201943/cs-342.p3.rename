@@ -8,4 +8,5 @@ public class LoveGameBehavior : MonoBehaviour
     public float rate = 1.0f;
     public List<GameObject> subjects;
     public LoveGameBehavior subject;
+    public float moveSpeed = 20f;
 }
