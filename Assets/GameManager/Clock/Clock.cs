@@ -40,6 +40,11 @@ public class Clock : MonoBehaviour
 
     void Update()
     {
+        if (stopped)
+        {
+            return;
+        }
+
         // If we should be running
         if (currentTime > 0.0f)
         {
@@ -54,7 +59,7 @@ public class Clock : MonoBehaviour
         }
 
         // Do something only once, when time stops
-        if (!stopped && currentTime < 0.0f)
+        if (currentTime < 0.0f)
         {
             TimeOut();
         }
