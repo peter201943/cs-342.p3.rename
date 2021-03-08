@@ -45,6 +45,9 @@ public class Clock : MonoBehaviour
             return;
         }
 
+        // TEMP DEBUG
+        Debug.Log(currentTime);
+
         // If we should be running
         if (currentTime > 0.0f)
         {
@@ -70,6 +73,8 @@ public class Clock : MonoBehaviour
     /// </summary>
     private void TimeOut()
     {
+        Debug.Log("TIME OUT");
+
         // Alert the game manager the time is up
         gameManager.RoundOver();
 
