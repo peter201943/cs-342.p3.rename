@@ -13,7 +13,6 @@ public class ItemCollide : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("COLLISION WITH " + collision);
         if (collision.gameObject.tag == "Player")
         {
             paperHover.SendMoney();
